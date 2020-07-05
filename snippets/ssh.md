@@ -6,7 +6,7 @@ see all ssh keys
   - `ls -al ~/.ssh`
 
 generate default ssh key
-  - `ssh-keygen -t rsa`
+  - `ssh-keygen -t rsa` -C "pravatpandey@gmail.com"
 
 generate custom ssh key to a file 
   - `ssh-keygen -t rsa -C "pravat.neesum@gmail.com" -f "~/.ssh/id_rsa_neesum"`
