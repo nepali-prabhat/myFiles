@@ -1,6 +1,7 @@
 # SSH setup
 
 ## ssh keygen
+
 see all ssh keys
   - `ls -al ~/.ssh`
 
@@ -28,7 +29,7 @@ then add the .pub key generated to corresponding github accounts
 
   ```
 
-##adding a remote ssh
+## Adding a remote ssh
 
 see current remotes
   - `git remote -v`
