@@ -1,0 +1,393 @@
+_type: export
+__export_format: 4
+__export_date: 2020-09-12T22:18:20.970Z
+__export_source: insomnia.desktop.app:v2020.3.3
+resources:
+  - _id: req_c03366d3f0ca41fb96cb4e1b60f6da93
+    authentication: {}
+    body:
+      mimeType: multipart/form-data
+      params:
+        - id: pair_a16e556996d843878daae5cd4fa15e4e
+          name: phoneNumber
+          type: text
+          value: "9860722217"
+        - id: pair_274915424770452b81958a97f1b53f73
+          name: otp
+          type: text
+          value: "{otp}"
+    created: 1599943425410
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1599943425410
+    method: POST
+    modified: 1599943433199
+    name: verify OTP
+    parameters: []
+    parentId: wrk_54c6f9355eba4bf7860e8cbd94213b79
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: https://test.neesum.com/otp/verify
+    _type: request
+  - _id: wrk_54c6f9355eba4bf7860e8cbd94213b79
+    created: 1598687167614
+    description: ""
+    modified: 1598687167614
+    name: NEESUM
+    parentId: null
+    scope: null
+    _type: workspace
+  - _id: req_cc037ff9abae4d9eb5fbb77ed15fd1d2
+    authentication: {}
+    body:
+      mimeType: multipart/form-data
+      params:
+        - name: phoneNumber
+          type: text
+          value: "{phone number}"
+    created: 1599942182597
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1599942182597
+    method: POST
+    modified: 1599942184272
+    name: send OTP
+    parameters: []
+    parentId: wrk_54c6f9355eba4bf7860e8cbd94213b79
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: https://test.neesum.com/otp/send
+    _type: request
+  - _id: req_e9913e1ef1364a3490c948513d3977cc
+    authentication:
+      token: "{{ auth }}"
+      type: bearer
+    body:
+      mimeType: multipart/form-data
+      params:
+        - id: pair_979d676b02f2474f87adba32e98e08b6
+          name: username
+          type: text
+          value: "9840095714"
+    created: 1599938020912
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1599938020912
+    method: DELETE
+    modified: 1599947779667
+    name: delete user
+    parameters: []
+    parentId: wrk_54c6f9355eba4bf7860e8cbd94213b79
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: https://test.neesum.com/user/tadaa
+    _type: request
+  - _id: req_099d1295a00a46f7be99448d2246eb1a
+    authentication: {}
+    body: {}
+    created: 1599915134800
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1599915134800
+    method: GET
+    modified: 1599915134800
+    name: update customer
+    parameters: []
+    parentId: fld_ff19c0b3c01f45f3ab1b30e023ed4206
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: ""
+    _type: request
+  - _id: fld_ff19c0b3c01f45f3ab1b30e023ed4206
+    created: 1599915105368
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1599915105368
+    modified: 1599915105368
+    name: Update
+    parentId: wrk_54c6f9355eba4bf7860e8cbd94213b79
+    _type: request_group
+  - _id: req_70f91749de3947e1859bc07dc15e7f5f
+    authentication: {}
+    body: {}
+    created: 1599915119192
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1599915119192
+    method: GET
+    modified: 1599915119192
+    name: update driver
+    parameters: []
+    parentId: fld_ff19c0b3c01f45f3ab1b30e023ed4206
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: ""
+    _type: request
+  - _id: req_286aa8d9a7814eca9da03153ab876773
+    authentication:
+      token: "{{ auth }}"
+      type: bearer
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - description: ""
+          id: pair_542d5c6dd8f741f6b9c2a70d15eb177a
+          name: username
+          value: "9840095714"
+    created: 1598687194693
+    description: ""
+    headers:
+      - id: pair_83c8536ccfc1459fbf09eae0f6cfca70
+        name: Content-Type
+        value: application/x-www-form-urlencoded
+    isPrivate: false
+    metaSortKey: -1598687962632.5
+    method: POST
+    modified: 1599915004065
+    name: username exists
+    parameters: []
+    parentId: fld_96a8fd3c5ecd4d02ae914f6546e9dd00
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ test_url }}/user/username-exists"
+    _type: request
+  - _id: fld_96a8fd3c5ecd4d02ae914f6546e9dd00
+    created: 1599914992906
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1599914992906
+    modified: 1599914992906
+    name: Actions
+    parentId: fld_a96d387bb2c94ac39473206ce0bfcf13
+    _type: request_group
+  - _id: fld_a96d387bb2c94ac39473206ce0bfcf13
+    created: 1598688125957
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1598688125957
+    modified: 1599915030761
+    name: Login and Registration
+    parentId: wrk_54c6f9355eba4bf7860e8cbd94213b79
+    _type: request_group
+  - _id: req_a78d46ef1b6c4e0fa54d90d9c75ce77b
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "name": "OTP TEST",
+            "phoneNumber": "9840095714",
+            "password": "helloNibba1",
+            "userType": "customer",
+            "deviceId": "device123"
+        }
+    created: 1598960907330
+    description: ""
+    headers:
+      - id: pair_9dd77852b2e647a5a05d87fe3dba71df
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1598960907330
+    method: POST
+    modified: 1599914975728
+    name: register customer
+    parameters: []
+    parentId: fld_119b96542cb742fdb937feb2cfd71598
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ test_url }}/user/register"
+    _type: request
+  - _id: fld_119b96542cb742fdb937feb2cfd71598
+    created: 1599914958450
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1599914958450
+    modified: 1599914958450
+    name: Registration
+    parentId: fld_a96d387bb2c94ac39473206ce0bfcf13
+    _type: request_group
+  - _id: req_ab940c0258304418bf630ad309f9c0f0
+    authentication: {}
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - description: ""
+          id: pair_ccd75825fe29424ebc4a44e0acce4525
+          name: phoneNumber
+          value: "9840095714"
+    created: 1599039518619
+    description: ""
+    headers:
+      - id: pair_513c576226114f90aae7d331a55900af
+        name: Content-Type
+        value: application/x-www-form-urlencoded
+    isPrivate: false
+    metaSortKey: -1598480936597.375
+    method: POST
+    modified: 1599914941405
+    name: send otp
+    parameters: []
+    parentId: fld_a9c4d590346340979473c559b98afb8d
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ test_url }}/otp/send"
+    _type: request
+  - _id: fld_a9c4d590346340979473c559b98afb8d
+    created: 1599914937002
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1599914937002
+    modified: 1599914937002
+    name: OTP
+    parentId: fld_a96d387bb2c94ac39473206ce0bfcf13
+    _type: request_group
+  - _id: req_9531b9d2e5914d51825961ae487ac229
+    authentication: {}
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - description: ""
+          id: pair_ccd75825fe29424ebc4a44e0acce4525
+          name: phoneNumber
+          value: "9840095714"
+        - description: ""
+          id: pair_8b9d2b8202d8402c930e6a35b06fbecf
+          name: otp
+          value: "5107"
+    created: 1599039684604
+    description: ""
+    headers:
+      - id: pair_513c576226114f90aae7d331a55900af
+        name: Content-Type
+        value: application/x-www-form-urlencoded
+    isPrivate: false
+    metaSortKey: -1598480936547.375
+    method: POST
+    modified: 1599914943878
+    name: verify otp
+    parameters: []
+    parentId: fld_a9c4d590346340979473c559b98afb8d
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ test_url }}/otp/verify"
+    _type: request
+  - _id: req_26c8c2352fd94b42987278b5f1bebb91
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "username": "9860722217",
+            "password": "helloNibba1"
+        }
+    created: 1598689137621
+    description: ""
+    headers:
+      - id: pair_513c576226114f90aae7d331a55900af
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1598549945275.75
+    method: POST
+    modified: 1599944940571
+    name: login
+    parameters: []
+    parentId: fld_3324325c8e2a46808fe39ebb18e4759a
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ test_url }}/user/authenticate"
+    _type: request
+  - _id: fld_3324325c8e2a46808fe39ebb18e4759a
+    created: 1599914927620
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1599914927620
+    modified: 1599915043192
+    name: Login
+    parentId: fld_a96d387bb2c94ac39473206ce0bfcf13
+    _type: request_group
+  - _id: env_ba6e973b7d3c9ecd0445748b70dddd7fd0abbb1d
+    color: null
+    created: 1598687167768
+    data:
+      api_url: https://api.neesum.com
+      auth: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOjM3Nywic3ViIjoiOTg2MDcyMjIxNyIsImlhdCI6MTU5OTkxNDA0MywiZXhwIjoxNTk5OTUwMDQzfQ.SJ_djfnRb8lfkGuc9AaMhyJ_S4X2KPOzXm5BSkQZtAg
+      test_url: https://test.neesum.com
+    dataPropertyOrder:
+      "&":
+        - api_url
+        - test_url
+        - auth
+    isPrivate: false
+    metaSortKey: 1598687167768
+    modified: 1599914087097
+    name: Base Environment
+    parentId: wrk_54c6f9355eba4bf7860e8cbd94213b79
+    _type: environment
+  - _id: jar_ba6e973b7d3c9ecd0445748b70dddd7fd0abbb1d
+    cookies: []
+    created: 1598687167775
+    modified: 1598687167775
+    name: Default Jar
+    parentId: wrk_54c6f9355eba4bf7860e8cbd94213b79
+    _type: cookie_jar
+  - _id: spc_ed311a3e080947fda410c6041975f2ab
+    contentType: yaml
+    contents: ""
+    created: 1598687167626
+    fileName: NEESUM
+    modified: 1598687167626
+    parentId: wrk_54c6f9355eba4bf7860e8cbd94213b79
+    _type: api_spec

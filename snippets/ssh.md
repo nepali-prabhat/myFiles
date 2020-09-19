@@ -38,3 +38,14 @@ add remote ssh
   - `git remote add origin http://git@neesum.github.com:dev-neesum/customer`
 
 **Note** how we have `neesum.github.com` and not just `github.com`. The host name must match with the one that we have in config
+
+## Git config 
+    
+see all config
+    - `git config --list`
+
+get a specifig config active in the repo
+    - `git config user.email` or `git config --get <<user.email>>`
+
+set a config
+    - `git config user.email "pandeypravat@gmail.com"`
