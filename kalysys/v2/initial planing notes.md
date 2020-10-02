@@ -1,4 +1,4 @@
-# Kalysys v2 notes
+# Kalysys v2 internal notes
 ## Model to approach the system
 Having a clear and dedicated model for approaching the system that we are building is crutial. It helps us make right important decissions moving forward.
 
@@ -17,6 +17,29 @@ Learning from v1, we will keep all those good decissions that is working and mos
 
 `Todo`
 
+-- more abstract
+1. recordValues, fields, fieldTypes
+
+- client(UI)
+
+split
+
+- server
+
+- database (persist any data)
+
+
+-- section notes
+1. slow development
+2. flexible forms
+3. white labeling (colors, logo, layouts, navlayout, dashboard, navigation) (adaptive design)
+4. scalability -> database (pubsub/synchronization)
+5. ss-validation
+6. query (aggregation, joins, groupbys, )
+7. configs (company settings, user settings, creating fields and forms)
+	-	create/update new fields on the forms
+	-  
+
 ### System Architecture
 Here we decide on the architectural blueprint of the system.
 
@@ -29,7 +52,7 @@ The low level system design includes selecting the language, database, framework
 __Section notes:__
 1. The clean architecture
 
-`// Todo`
+`Todo`
 
 ### Development
 Learning from kalysys v1, we can already decide some key features we want to have in the v2:
@@ -40,9 +63,13 @@ Learning from kalysys v1, we can already decide some key features we want to hav
 - hooks and redux/recoil
 
 __Section notes:__
-1. Testing frameworks: `mocha`, `chai`, `sinon`
-- Github rules
+1. typescript 
+- `mocha`, `chai`, `sinon`
+- github actions
+- docker
 - ajv
+- swagger
+- doctopus
 
 ### Testing 
 During the development and after the release we want to test the system that we have built. This is significant for the further growth of the system. Giant, successful companies such as Netflix, Facebook, Linkedin, tiktok would be nowhere are successful without their rigorous testing.
