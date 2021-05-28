@@ -1,3 +1,4 @@
+```
 library $1$;
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
@@ -23,3 +24,4 @@ abstract class $CLASS_NAME$ implements Built<$CLASS_NAME$, $CLASS_NAME$Builder> 
     }
   
 }
+```
